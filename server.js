@@ -20,6 +20,12 @@ app.get('/', async (req, res) => {
 app.get('/why-us?',async(req,res)=>{
   res.render('why-us?')
 })
+app.get('/features',async(req,res)=>{
+  res.render('features')
+})
+app.get('/pricing',async(req,res)=>{
+  res.render('pricing')
+})
 
 app.post('/shortUrls', async (req, res) => {
   await ShortUrl.create({ full: req.body.fullUrl })
