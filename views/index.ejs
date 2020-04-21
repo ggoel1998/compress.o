@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/head') %>
+</head>
+<body>
+
+  <header>
+    <%- include('partials/header') %>
+     </header>
+     
+     
+ 
+    
+    
+    
+    <section class="presentation">
+      <div class="introduction">
+        <div class="intro-text">
+          <h1>Shrink Your Website</h1>
+          <p>Build and protect your brand using powerful, recognizable short links.</p>
+        </div>
+        <div class="cta">  
+          <!-- call to action -->
+           <button class="cta-share" onClick="document.getElementById('footer').scrollIntoView();"><i class="fas fa-share-alt"></i> Share</button>
+           <button class="cta-custom" onClick="document.getElementById('shrink').scrollIntoView();"><i class="fas fa-link"></i> Create Custom Links</button>
+        </div>
+      </div>
+
+        <div class="cover">
+          <img src="shortener.svg" alt="img" >
+        </div>
+    </section>
+
+
+
+    <section class=" fwh-bg" id="shrink">
+    <form action="/shortUrls" method="POST" class="my-2 form-inline shrink">
+      <label for="fullUrl" class="sr-only">Url</label>
+      <input required placeholder="Url" type="url" name="fullUrl" id="fullUrl" class="form-control col mr-2">
+      <button class="btn btn-success" type="submit">Shrink</button>
+    </form>
+
+    <table class="table table-striped  " id="table1" >
+      <thead>
+        <tr>
+          <th>Full URL</th>
+          <th>Short URL</th>
+          <th>Clicks</th>
+        </tr>
+      </thead>
+      <tbody id="">
+        <% shortUrls.forEach(shortUrl => { %>
+          <tr>
+            <td><a href="<%= shortUrl.full %>"><%= shortUrl.full %></a></td>
+            <td><a href="<%= shortUrl.short %>"><%= shortUrl.short %></a></td>
+            <td><%= shortUrl.clicks %></td>
+           
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  
+  </section>
+
+  <section>
+    <div class="love-brand">
+      <div class="brand-text"><h2>The Brands in  <i class="fas fa-heart"></i> with Compress.o</h2>
+      </div>
+      <div class="brand-icons">
+        <i class="fab fa-apple mr-md-5 mr-3 fa-5x"></i>  
+        <i class="fab fa-amazon mr-md-5 mr-3 fa-5x"></i>
+        <i class="fab fa-microsoft mr-md-5 mr-3 fa-5x"></i>
+        <i class="fab fa-npm  mr-md-5 mr-3 fa-5x"></i>
+        <i class="fab fa-linkedin mr-md-5 mr-3 fa-5x"></i>
+        <i class="fab fa-adobe  mr-md-5 mr-3 fa-5x"></i>
+        <i class="fab fa-airbnb  mr-md-5 mr-3 fa-5x"></i>
+
+      </div>
+      </div>
+    
+  </section>
+
+
+</body>
+<footer>
+<%- include('partials/footer') %>
+</footer>
+</html>
+
+

@@ -1,0 +1,282 @@
+*{
+    margin:0px;
+    padding: 0px;
+box-sizing: border-box;
+}
+
+
+
+
+body{font-family: 'Poppins', sans-serif;
+    /* text-align: center; */
+}
+button{font-family: 'Poppins', sans-serif;
+}
+header{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+header{
+    display: flex;
+    /* background: lightblue; */
+    /* width: 90%; */
+    margin: auto;
+    align-items: center;
+}
+
+
+
+nav{
+flex: 2;
+}
+
+.navbar-custom { 
+    background-color:  #6C63FF;
+} 
+.navbar-custom .navbar-brand, 
+.navbar-custom .navbar-text,
+.navbar-custom .nav-link { 
+    color: white; 
+} 
+.presentation{
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    width: 80%;
+    margin: auto;
+    min-width: 80vh;
+    align-items: center;
+
+}
+
+.fwh-bg{
+    text-align: center;
+    background: #003366
+}
+.shrink{
+    display: inline-block;
+}
+table#table1{
+    width:70%; 
+    margin-left:15%; 
+    margin-right:25%;
+    border-radius: 20px;
+    background: white;
+}
+
+
+
+.introduction{
+    flex: 0.5;
+}
+.intro-text h1{
+font-size: 55px;
+font-weight: bolder;
+background: linear-gradient(to right,#494964,#6f6f89);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.cta{
+    padding: 50px 0px 0px 0px;
+    display: flex;
+}
+.cta-share{
+    border: 2px solid #6C63FF;
+    background: transparent;
+    color: #6C63FF;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.cta-custom{
+    background:#6C63FF ;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 15px;
+    border: none;
+    color: white;
+    margin: 0px 0px 0px 30px;
+}
+
+
+.cover{
+    flex: 0.75;
+}
+.cover img{
+    height: 35vh;
+}
+
+.cyan{
+    background-color: #6C63FF ;
+}
+
+.row{
+    display: inline;
+    position: relative;
+    left: 35%;
+}
+ 
+
+/* for footer */
+.contain{  
+    height: 10%;
+}
+
+
+
+/* container for brands icons */
+.love-brand{
+    height: 50vh;
+   
+}
+
+
+  /* love in brands icons */
+.brand-icons{
+    text-align: center;
+    position: relative;
+    top: 10%;
+}
+
+.brand-text h2{
+    text-align: center;
+    font-size: 55px;
+    font-weight: bolder;
+     position: relative;
+    top: 10%;
+
+}
+
+
+.block-1{
+    height: 60vh;
+    box-sizing: border-box;
+    display: flex;
+    width: 80%;
+    margin: auto;
+    min-width: 80vh;
+    align-items: center;
+}
+.intro-1{
+    flex: 0.5;
+}
+.intro-1-text h2{
+font-size: 55px;
+font-weight: bolder;
+background: linear-gradient(to right,#494964,#6f6f89);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.img-1{
+    flex: 0.75;
+}
+.img-1 img{
+    height: 35vh;
+}
+
+.block-2{
+    height: 60vh;
+    box-sizing: border-box;
+    display: flex;
+    width: 80%;
+    margin: auto;
+    min-width: 80vh;
+    align-items: center;
+}
+.intro-2{
+    flex: 0.5;
+}
+.intro-2-text h2{
+font-size: 55px;
+font-weight: bolder;
+background: linear-gradient(to right,#494964,#6f6f89);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.img-2{
+    flex: 0.75;
+}
+.img-2 img{
+    height: 35vh;
+}
+
+.block-3{
+    height: 60vh;
+    box-sizing: border-box;
+    display: flex;
+    width: 80%;
+    margin: auto;
+    min-width: 80vh;
+    align-items: center;
+}
+.intro-3{
+    flex: 0.5;
+}
+.intro-3-text h2{
+font-size: 55px;
+font-weight: bolder;
+background: linear-gradient(to right,#494964,#6f6f89);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.img-3{
+    flex: 0.4;
+}
+.img-3 img{
+    height: 35vh;
+}
+
+
+.block-4{
+    height: 60vh;
+    box-sizing: border-box;
+    display: flex;
+    width: 80%;
+    margin: auto;
+    min-width: 80vh;
+    align-items: center;
+}
+.intro-4{
+    flex: 0.5;
+}
+.intro-4-text h2{
+font-size: 55px;
+font-weight: bolder;
+background: linear-gradient(to right,#494964,#6f6f89);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.img-4{
+    flex: 0.75;
+}
+.img-4 img{
+    height: 35vh;
+}
+
+.cta-1{
+    
+        padding: 50px 0px 0px 0px;
+        display: flex;
+    
+}
+
+.cta-explore{
+
+        border: 2px solid #6C63FF;
+        background: transparent;
+        color: #6C63FF;
+        width: 150px;
+        height: 50px;
+        cursor: pointer;
+        font-size: 20px;
+    
+}
