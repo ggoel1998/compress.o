@@ -4,7 +4,7 @@ const ShortUrl = require('./models/shortUrl')  //model
 const app = express()
 
 
-mongoose.connect('mongodb://localhost/url', {
+mongoose.connect('mongodb://localhost/url', {                     //localhost/url is the db used
   useNewUrlParser: true, useUnifiedTopology: true
 })
 
