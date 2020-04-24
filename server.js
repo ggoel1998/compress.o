@@ -1,17 +1,24 @@
-const express = require('express')
-const mongoose = require('mongoose')
+const express = require('express') //using express
+const mongoose = require('mongoose')  //using mongo 
 const ShortUrl = require('./models/shortUrl')  //model
-const app = express()
+const app = express()  //defining server app
 
 
-mongoose.connect('mongodb://localhost/url', {                     //localhost/url is the db used
+mongoose.connect( process.env.MONGODB_URI || 'mongodb://localhost/url', {                     //localhost/url is the db used
   useNewUrlParser: true, useUnifiedTopology: true
 })
 
+//templating engine as EJS
 app.set('view engine', 'ejs')
+
+//config
 app.use(express.urlencoded({ extended: false }))
 app.use( express.static( "public"));
 
+
+
+
+//routes
 app.get('/', async (req, res) => {
   const shortUrls = await ShortUrl.find()
   res.render('index', { shortUrls: shortUrls  })
@@ -45,7 +52,10 @@ app.get('/:shortUrl', async (req, res) => {
 
 
 
-app.listen(process.env.PORT || 5000);
+//port running
+app.listen(process.env.PORT || 5000 ,()=>{
+  console.log('Server Up and Running')
+});
 
 
 
